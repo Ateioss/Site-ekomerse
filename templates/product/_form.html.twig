@@ -1,4 +1,58 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    
+    <div style="display:flex;gap:10px;">
+        <div style="width:30%;">
+            {{ form_label(form.name) }}
+        </div>
+        <div>
+            {{ form_widget(form.name) }}
+        </div>
+    </div>
+
+    <div style="display:flex;gap:10px;">
+        <div style="width:30%;">
+            {{ form_label(form.decription) }}
+        </div>
+        <div>
+            {{ form_widget(form.decription) }}
+        </div>
+    </div>
+
+    <div style="display:flex;gap:10px;">
+        <div style="width:30%;">
+            {{ form_label(form.price) }}
+        </div>
+        <div>
+            {{ form_widget(form.price) }}
+        </div>
+    </div>
+
+    <div style="display:flex;gap:10px;">
+        <div style="width:30%;">
+            {{ form_label(form.picture) }}
+        </div>
+        <div>
+            {{ form_widget(form.picture) }}
+        </div>
+    </div>
+
+    <div style="display:flex;gap:10px;">
+        <div style="width:30%;">
+            {{ form_label(form.stock) }}
+        </div>
+        <div>
+            {{ form_widget(form.stock) }}
+        </div>
+    </div>
+
+    <div style="display:flex;gap:10px;">
+        <div style="width:30%;">
+            {{ form_label(form.Category) }}
+        </div>
+        <div>
+            {{ form_widget(form.Category) }}
+        </div>
+    </div>
+
+    <button class="btn btn-info">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}
