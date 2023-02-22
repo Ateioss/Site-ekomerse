@@ -1,0 +1,59 @@
+{{ form_start(form) }}
+    
+    <div style="display:flex;gap:10px;">
+        <div>
+        {{ form_label(form.Firstname) }}
+        </div>
+        <div>
+        {{ form_widget(form.Firstname) }}
+        </div>
+    </div>
+
+    <div style="display:flex;gap:10px;">
+        <div>
+            {{ form_label(form.Lastname) }}
+        </div>
+        <div>
+            {{ form_widget(form.Lastname) }}
+        </div>
+    </div>
+
+    <div style="display:flex;gap:10px;">
+        <div>
+            {{ form_label(form.email) }}
+        </div>
+        <div>
+            {{ form_widget(form.email) }}
+        </div>
+    </div>
+
+    <div style="display:flex;gap:10px;">
+        <div>
+            {{ form_label(form.Phone) }}
+        </div>
+        <div>
+            {{ form_widget(form.Phone) }}
+        </div>
+    </div>
+
+    <div style="display:flex;gap:10px;">
+        <div>
+            {{ form_label(form.roles) }}
+        </div>
+        <div>
+            {{ form_widget(form.roles) }}
+        </div>
+    </div>
+
+    <div style="display:flex;gap:10px;">
+        <div>
+            {{ form_label(form.plainPassword) }}
+        </div>
+        <div>
+            {{ form_widget(form.plainPassword) }}
+        </div>
+    </div>
+    <div style="margin-top:20px;">
+        <button class="btn btn-info">{{ button_label|default('Save') }}</button>
+    </div>
+{{ form_end(form) }}
